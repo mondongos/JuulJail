@@ -1,13 +1,19 @@
+// #include <Wire.h>
+// #include "rgb_lcd.h"
 
-int initSerialMonitor() {
-    int x;
-    x = 1;
+// rgb_lcd lcd;
+
+// void initialiseScreen() {
+//     lcd.begin(16,2);
+// }
+
+char grim() {
+    char x = "fuck";
     return x;
 }
 
-int whatever() {
-    int y;
-    y = 999;
-    return y;
-}
-
+// void writeToScreen() {
+//     lcd.clear();
+//     lcd.setCursor(0,0);
+//     lcd.print("Fart!! Owwwwww!");
+// }

@@ -1,4 +1,5 @@
 #include "lcd.c"
 
-int initSerialMonitor();
-int whatever();
+// void initialiseScreen();
+// void writeToScreen();
+char grim();
