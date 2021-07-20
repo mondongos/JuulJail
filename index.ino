@@ -57,33 +57,5 @@ void loop() {
             timerState = "LOCKED";
         }
     }
-
-
-
-    // if (counter > 0) {
-    //     lcd.clear();
-    //     timerState = "LOCKED";
-    //     lcd.setCursor(0, 0);
-    //     lcd.print("JUUL is ");
-    //     lcd.print(timerState);
-    //     lcd.setCursor(0, 1);
-    //     lcd.print(counter);
-    //     lcd.print(" seconds left");
-    // }
-    // else if (counter <= 0) {
-    //     timerState = "UNLOCKED";
-    //     counter = 0;
-    //     lcd.clear();
-    //     lcd.setCursor(0, 0);
-    //     lcd.print("JUUL is ");
-    //     lcd.print(timerState);
-    //     lcd.setCursor(0, 1);
-    //     lcd.print(counter);
-    //     lcd.print(" seconds left");
-    //     servo.write(180);
-    //     if (digitalRead(BUTTON_PIN) == HIGH) {
-    //         counter = counter + 15;
-    //     }
-    // }
     delay(1000);
 }
