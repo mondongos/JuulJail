@@ -34,15 +34,17 @@ void loop() {
     lcd.print(" seconds left");
 
     if(timerState == "LOCKED") {
+        servo.write(0);
         if(counter < 1) {
             timerState = "UNLOCKED";
-            servo.write(0);
         }
         else {
             counter--;
         }
     }
     else if (timerState == "UNLOCKED") {
+        servo.write(180);
+
         if(digitalRead(SET_BUTTON) == HIGH) {
             timerState = "SET";
         } 
@@ -53,7 +55,6 @@ void loop() {
         }
         else if (digitalRead(SET_BUTTON) == HIGH && counter > 5) {
             timerState = "LOCKED";
-            servo.write(0)
         }
     }
 
