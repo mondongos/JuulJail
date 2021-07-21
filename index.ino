@@ -27,7 +27,7 @@ void loop() {
     Serial.println(digitalRead(SET_BUTTON));
     lcd.clear();
     lcd.setCursor(0, 0);
-    lcd.print("JUUL is ");
+    lcd.print("State: ");
     lcd.print(timerState);
     lcd.setCursor(0, 1);
     lcd.print(counter);
@@ -53,7 +53,7 @@ void loop() {
         if(digitalRead(SECONDS_BUTTON) == HIGH) {
             counter = counter + 5;
         }
-        else if (digitalRead(SET_BUTTON) == HIGH && counter > 5) {
+        else if (digitalRead(SET_BUTTON) == HIGH && counter > 4) {
             timerState = "LOCKED";
         }
     }
